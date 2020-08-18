@@ -1,0 +1,322 @@
+/* header */
+
+.site-branding {
+    margin-top: 0px;
+    text-transform: capitalize;
+}
+
+.navigate {
+    background-color: #323031;
+    padding: 10px 0px;
+    color: cornsilk;
+    display: flex;
+    margin: 0px;
+}
+
+.navigate li a {
+    color: #ffff;
+    padding-right: 30px;
+    text-align: center;
+    /* transition: all .2s ease-in; */
+    text-decoration: none;
+    position: relative;
+}
+
+.genre {
+    padding: 20px;
+    background-color: #323031;
+    visibility: hidden;
+    /* transition: all .2s easa-in; */
+    position: absolute;
+    color: white;
+    margin-left: 0px;
+    min-width: 200px;
+    z-index: 10;
+}
+
+
+/* li .genre::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    top: 0;
+} */
+
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.genre .the_loai {
+    /* padding-right: 20px; */
+    display: flex;
+}
+
+.genre .the_loai a {
+    text-align: left;
+    padding-bottom: 20px;
+    z-index: 10;
+    /* transition: all .2s ease-in-out; */
+}
+
+.below ul {
+    list-style: none;
+}
+
+
+/* hover */
+
+.navigate li a:hover {
+    background: #fff;
+    padding: 0px 5px;
+    color: orangered;
+    outline: none;
+    text-decoration: underline;
+}
+
+.navigate li:hover ol {
+    visibility: initial;
+}
+
+
+/* slideshow */
+
+#group_slider {
+    width: 100%;
+    height: 500px;
+}
+
+.blog-item {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #04B431;
+    font-size: 30px;
+}
+
+.blog-item .cont {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-item .cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.slick-dots li {
+    margin: 0 10px;
+}
+
+.slick-dots .slick-active button {
+    background-color: blue;
+}
+
+.slick-dots button {
+    border: 0;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.slick-dots button:focus {
+    outline: none;
+}
+
+.slick-dots button:hover {
+    background: blue;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+
+.slick-next {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    bottom: 50%;
+    transform: translate(-50%, 0)
+}
+
+
+/* footer*/
+
+.site-info {
+    padding-top: 20px;
+}
+
+#recent-posts-5 :hover {
+    color: chocolate;
+}
+
+#meta-5 :hover {
+    color: chocolate;
+}
+
+.haha {
+    color: blue;
+    border-top: blue thin .1cm;
+}
+
+
+/* main */
+
+
+/* search */
+
+.search-field {
+    border-radius: 50%;
+}
+
+.widget-area .search-field :active {
+    border: none;
+}
+
+.screen-reader-text :active {
+    border-radius: 50%;
+    border: none;
+}
+
+#search-5 .search-field :focus {
+    border: none;
+}
+
+#search-5 .search-submit {
+    border-radius: 50%;
+    background-color: #04B431;
+}
+
+
+/* read more button */
+
+.blogpost-button {
+    background-color: orangered;
+}
+
+.blogpost-button:hover {
+    background-color: peru;
+}
+
+
+/* comment */
+
+.reply {
+    color: blue;
+}
+
+.comment_views {
+    font-size: 20px;
+    color: blue;
+}
+
+
+/* post above */
+
+.line_sci {
+    background-color: lawngreen;
+    color: lawngreen;
+}
+
+.line_art {
+    background-color: burlywood;
+    color: burlywood;
+}
+
+
+/* login form */
+
+.loginform {
+    background-color: black;
+    color: chocolate;
+}
+
+
+/* content_main login */
+
+.theme_gallery_about_us {
+    background-image: url("../images/koi.jpg");
+    text-align: center;
+    color: blue;
+}
+
+.theme_gallery_about_us h1 {
+    color: black;
+}
+
+.content-login {
+    background-color: whitesmoke;
+    color: black;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    opacity: 90%;
+}
+
+#user .input {
+    border: thin black .2cm;
+}
+
+
+/* 404 page */
+
+.image_err {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#primary-menu {
+    background-color: black;
+}
+
+#primary-menu li a {
+    color: whitesmoke;
+}
+
+
+/* all post page */
+
+.all_posts {
+    background-color: whitesmoke;
+}
+
+.all_posts li {
+    list-style: decimal;
+    margin-bottom: 10px;
+}
