@@ -16,6 +16,8 @@
 		</div>
 	<?php endif; ?>
 	<header class="entry-header">
+		<button class="back_to_top_btn"><i class="fa fa-arrow-up"></i></button>
+		<div class="content_single_page">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -34,10 +36,11 @@
 				</div>
 			</div>
 		</div><!-- .entry-meta -->
+		</div>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
-
+	
 	<div class="entry-content">
 		<?php the_content(); ?>
 

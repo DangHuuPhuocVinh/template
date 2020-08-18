@@ -313,16 +313,28 @@ function movie_demo() {
 
 	wp_enqueue_style('main', THEME_URI.'/css/main.css?'.$date);
 	wp_enqueue_style('slick', THEME_URI.'/css/slick.css?'.$date);
+	wp_enqueue_style('boostrap', THEME_URI.'/css/bootstrap.min.css');
 	
 	wp_enqueue_script( 'jquery-off', THEME_URI. '/js/jquery.min.js', '','' , true);
     wp_enqueue_script( 'slick', THEME_URI. '/js/slick.min.js', '','' , true);
-    wp_enqueue_script( 'main', THEME_URI. '/js/main.js', '','' , true);
+	wp_enqueue_script( 'main', THEME_URI. '/js/main.js', '','' , true);
+	wp_enqueue_script( 'popup', THEME_URI. '/js/popup.js', '', '', true);
+	wp_enqueue_script( 'back_to_top', THEME_URI. '/js/back_to_top.js', '', '', true);
 
 }
 add_action('wp_enqueue_scripts', 'movie_demo' );
 
 
 //////////////
+///// add option
+// add_action( 'admin_init', 'register_settings' );
+// function register_settings(){
+// 	//đăng ký các fields settings
+// 	register_setting( 'my-settings-group', 'phone' );
+// 	register_setting( 'my-settings-group', 'company_address' );
+
+// }
+// include('options.php');
 
 //Function login page
 function redirect_login_page() {
@@ -363,6 +375,9 @@ function login_failed() {
 	add_action('wp_logout','logout_page');
 
 ///////
+
+
+
 
 /**
  * Compare page content

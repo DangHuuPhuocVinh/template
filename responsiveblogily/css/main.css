@@ -68,6 +68,71 @@ ol {
     list-style: none;
 }
 
+.change_img button {
+    margin-top: 20px;
+}
+
+
+/* The Modal (background) */
+
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* change background/image button */
+
+.change_background2 {
+    margin-right: 440px;
+}
+
 
 /* hover */
 
@@ -188,9 +253,8 @@ ol {
     color: chocolate;
 }
 
-.haha {
-    color: blue;
-    border-top: blue thin .1cm;
+.site-info {
+    background-color: #303030;
 }
 
 
@@ -257,6 +321,16 @@ ol {
     color: burlywood;
 }
 
+.line_culture {
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+}
+
+.line_history {
+    background-color: red;
+    color: red;
+}
+
 
 /* login form */
 
@@ -319,4 +393,62 @@ ol {
 .all_posts li {
     list-style: decimal;
     margin-bottom: 10px;
+    flex-direction: row;
+}
+
+
+/* change image page */
+
+.image_upload {
+    height: 500px;
+}
+
+
+/* view post */
+
+.views_post {
+    color: blue;
+}
+
+
+/* back to top */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back_to_top_btn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    font-size: 26px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 90%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 10;
+    margin-left: 764px;
+}
+
+.back_to_top_btn:hover,
+.back_to_top_btn:focus {
+    background-color: red;
+    color: #fff;
+}
+
+.content_single_page {
+    scroll-behavior: smooth;
+}
+
+.frame_ads_cont {
+    margin-left: 50px;
+    width: 250px;
+    height: 300px;
 }

@@ -1,7 +1,7 @@
 <?php
 if (!function_exists( 'pagination' )){
 function pagination(){
-    if ( $GLOBALS['wp_query'] -> max_num_pages < 2 )
+    if ( $GLOBALS['wp_query'] -> max_num_pages < 4 )
     { return ''; 
     } ?>
         <nav class="pagination" role="navigation">
@@ -18,4 +18,4 @@ function pagination(){
 <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 <?php endwhile; ?>
-<?php pagination(); ?>
+<!-- <?php pagination(); ?> -->

@@ -25,6 +25,8 @@
 						<select name="category">
 							<option value="khoa_hoc">Khoa học</option>
 							<option value="nghe_thuat">Nghệ thuật</option>
+							<option value="lich_su">Lịch sử</option>
+							<option value="van_hoa">Văn hóa</option>
 						</select>
 					</div>
 					<?php dynamic_sidebar('footerwidget-1'); ?>
@@ -51,10 +53,10 @@
 					<div>Contact</div>
 					<br>
 					<div class="button_contact">
-						<button class="button_cont"><i class="fa fa-facebook"><link href="www.facebook.com"></link></i></button>
-						<button class="button_cont"><i class="fa fa-twitter"></i></button>
-						<button class="button_cont"><i class="fa fa-instagram"></i></button>
-						<button class="button_cont"><i class="fa fa-pinterest"></i></button>
+						<button onclick="window.location.href='https://www.facebook.com/'"  class="button_cont"><i class="fa fa-facebook"></i></button>
+						<button onclick="window.location.href='https://www.twitter.com/'" class="button_cont"><i class="fa fa-twitter"></i></button>
+						<button onclick="window.location.href='https://www.instagram.com/'" class="button_cont"><i class="fa fa-instagram"></i></button>
+						<button onclick="window.location.href='https://www.pinterest.com/'"class="button_cont"><i class="fa fa-pinterest"></i></button>
 					</div>
 				</div>
 				<br>
