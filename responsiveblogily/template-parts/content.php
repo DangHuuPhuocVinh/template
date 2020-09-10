@@ -15,6 +15,7 @@
 		<div class="featured-thumbnail">
 			<!-- phan loai category bai post theo mau, em lam de biet vi tri post nhu the nao ạ -->
 			<?php $post_tag = get_the_tags();
+			
 			foreach ($post_tag as $tag) {
 				if ($tag->name === "khoa học") { ?>
 					<div class="line_sci">Hey</div>

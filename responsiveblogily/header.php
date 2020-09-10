@@ -45,9 +45,7 @@
 						<?php if (is_front_page() && is_home()) : ?>
 							<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 							<div class="word"> Welcome to my website</div>
-
-
-
+							
 							<div id="group_slider">
 								<div class="blog-item">
 									<div class="cont">
@@ -60,7 +58,7 @@
 								<div class="blog-item">
 									<div class="cont">
 										<img src="<?php echo DF_IMAGE . '/math.jpg' ?>" class="d-block w-100" alt="img">
-									</div>
+										</div>
 									<div class="title">
 										Toán học
 									</div>
@@ -110,7 +108,7 @@
 												<img src="<?php echo DF_IMAGE . '/change.jpg'; ?>" alt="img">
 												<br>
 												<button class='change_background2' onclick="window.location.href = 'http://localhost/wordpress/wp-admin/customize.php?return=%2Fwordpress%2Fwp-admin%2Fwidgets.php&autofocus%5Bcontrol%5D=background_image';">Background</button>
-												<button class='change_image' onclick="window.location.href = 'http://localhost/wordpress/change-image/';">Image</button>
+												<button class='change_image' onclick="window.location.href = 'http://localhost/wordpress/wp-admin/admin.php?page=vinh_sunset'">Image</button>
 											</div>
 										</div>
 									</div>

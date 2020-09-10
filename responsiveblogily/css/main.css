@@ -127,6 +127,60 @@ ol {
 }
 
 
+/* The Modal (background) */
+
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* change background/image button */
 
 .change_background2 {
@@ -337,6 +391,7 @@ ol {
 .loginform {
     background-color: black;
     color: chocolate;
+    margin-top: 500px;
 }
 
 
@@ -396,6 +451,24 @@ ol {
     flex-direction: row;
 }
 
+.tag_seperated {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.science,
+.history,
+.culture,
+.art {
+    margin-right: 10px;
+    background-color: seagreen;
+}
+
+.sci_cont,
+.art_cont {
+    display: flex;
+}
+
 
 /* change image page */
 
@@ -433,7 +506,7 @@ ol {
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-property: background-color, color;
-    z-index: 10;
+    z-index: 2;
     margin-left: 764px;
 }
 
@@ -451,4 +524,11 @@ ol {
     margin-left: 50px;
     width: 250px;
     height: 300px;
+}
+
+
+/* side bar */
+
+.fa fa-edit {
+    margin-left: 30px;
 }
